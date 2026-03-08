@@ -18,7 +18,7 @@ function Signup() {
       if (isLogin) {
         // LOGIN API
         const res = await axios.post(
-          "http://localhost:5000/api/auth/login",
+          "https://resume-backend-cduz.onrender.com/api/auth/login",
           {
             email,
             password,
@@ -31,7 +31,7 @@ function Signup() {
       } else {
         // SIGNUP API
         await axios.post(
-          "http://localhost:5000/api/auth/signup",
+          "https://resume-backend-cduz.onrender.com/api/auth/signup",
           {
             name,
             email,
