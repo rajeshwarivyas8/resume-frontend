@@ -1,0 +1,414 @@
+/* components/ResumeBuilder/ResumeBuilder.css */
+/* ============================= */
+/* Resume Builder - SaaS Green Theme */
+
+/* Resume Builder - SaaS Green Theme */
+/* ============================= */
+/* ============================= */
+/* Resume Builder - Professional SaaS Theme */
+/* ============================= */
+
+.resume-builder {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: #ffffff;
+}
+
+/* Header */
+.builder-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #000; /* Black line for professional look */
+}
+
+.builder-header h1 {
+  color: #111827;
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+/* Layout */
+.builder-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  min-height: 800px;
+}
+
+.form-section {
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+  overflow: hidden;
+}
+
+.preview-section {
+  position: sticky;
+  top: 20px;
+  height: fit-content;
+}
+
+/* Navigation */
+.form-navigation {
+  display: flex;
+  flex-direction: column;
+  background: #f9f9f9;
+  border-right: 1px solid #e5e5e5;
+  min-width: 200px;
+}
+
+.nav-button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 20px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.nav-button:hover {
+  background: #f0f0f0;
+}
+
+.nav-button.active {
+  background: #22c55e;
+  color: white;
+}
+
+.nav-icon {
+  font-size: 1.2rem;
+}
+
+.nav-label {
+  font-weight: 500;
+}
+
+/* Form Content */
+.form-content {
+  padding: 30px;
+  flex: 1;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group.full-width {
+  grid-column: 1 / -1;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #111827;
+  font-size: 0.9rem;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 12px 16px;
+  border: 2px solid #e5e5e5;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #22c55e;
+  box-shadow: 0 0 0 3px rgba(34,197,94,0.15);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+  font-family: inherit;
+}
+
+/* Experience / Education / Projects */
+.experience-item,
+.education-item,
+.project-item {
+  background: #f9f9f9;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.item-header h4 {
+  margin: 0;
+  color: #111827;
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 5px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.remove-btn:hover {
+  background: #fee2e2;
+}
+
+/* Add Section */
+.add-new-section {
+  background: #f9f9f9;
+  border: 2px dashed #22c55e;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.add-new-section h4 {
+  margin: 0 0 20px 0;
+  color: #16a34a;
+}
+
+.add-btn {
+  background: #22c55e;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add-btn:hover {
+  background: #16a34a;
+}
+
+/* Preview */
+.resume-preview {
+  background: white;
+  border-radius: 0;                 /* removed rounded */
+  box-shadow: none;                 /* removed shadow */
+  overflow: hidden;
+}
+
+.preview-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #ffffff;              /* plain white */
+  border-bottom: 1px solid #000;    /* clean divider line */
+}
+
+.preview-header h3 {
+  margin: 0;
+  color: #111827;
+}
+
+.preview-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: #22c55e;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #16a34a;
+}
+
+.btn-secondary {
+  background: #6b7280;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background: #4b5563;
+}
+
+.preview-content {
+  padding: 30px;
+  background: #ffffff;
+  min-height: 800px;
+}
+
+/* ============================= */
+/* IMPORTANT: Remove BOX style inside preview */
+/* ============================= */
+
+.resume-preview .experience-item,
+.resume-preview .education-item,
+.resume-preview .project-item {
+  background: none;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  margin-bottom: 18px;
+}
+
+.resume-preview .item-header {
+  margin-bottom: 5px;
+}
+
+.resume-preview h4 {
+  font-weight: 600;
+}
+
+.resume-preview p {
+  margin: 4px 0;
+  line-height: 1.5;
+}
+
+
+
+
+/* Resume Paper */
+.resume-paper {
+  background: white;
+  min-height: 11in;
+  width: 8.5in;
+  margin: 20px auto;
+  box-shadow: none;     /* remove card effect */
+  border: 1px solid #ddd;  /* optional subtle page edge */
+  transform: scale(0.8);
+  transform-origin: top center;
+}
+
+
+
+/* Template */
+.modern-template {
+  padding: 40px;
+  line-height: 1.6;
+  color: #111827;
+}
+
+/* Personal Info / Header */
+.header {
+  border-bottom: 3px solid #000; /* black line */
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin: 0 0 10px 0;
+  font-weight: 700;
+}
+
+.contact-info span {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.social-links a {
+  color: #111827;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.social-links a:hover {
+  color: #22c55e;
+}
+
+/* Sections */
+.section h2 {
+  color: #111827;
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #000; /* black line */
+}
+
+/* Skills */
+.skill-tag {
+  background: #f0f0f0;
+  color: #111827;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Tech Tags */
+.tech-tag {
+  background: #f9f9f9;
+  color: #111827;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  border: 1px solid #e5e5e5;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .builder-content {
+    grid-template-columns: 1fr;
+  }
+  .resume-paper {
+    transform: scale(0.7);
+  }
+}
+
+@media (max-width: 768px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* ✅ DOWNLOAD BUTTON - LIGHT GREEN THEME */
+.download-btn {
+  background: #22c55e; /* light green like primary button */
+  color: white;        /* white text */
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.download-btn:hover {
+  background: #16a34a; /* slightly darker green on hover */
+  transform: translateY(-2px); /* optional lift effect */
+} ............simple cssuse krna tailwind nhi okk
