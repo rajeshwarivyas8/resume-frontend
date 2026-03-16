@@ -719,34 +719,45 @@ width:200px;
 }
 
 
-/* MOBILE NAVBAR FIX */
+/* MOBILE NAVBAR FIX - KEEP HORIZONTAL */
 @media (max-width:768px){
 
 .navbar{
-padding:15px 20px;
+padding:10px 10px;
 }
 
-.logo{
-font-size:1.4rem;
+.nav-inner{
+flex-direction:row;
+justify-content:space-between;
+align-items:center;
 }
 
-/* Hide center menu on mobile */
+/* center menu horizontal hi rahe */
 .nav-center{
-display:none;
+display:flex;
+gap:10px;
 }
 
-/* Right buttons adjust */
+.nav-center button{
+font-size:12px;
+padding:4px 6px;
+}
+
+/* right buttons small */
 .nav-right{
 display:flex;
-flex-direction:column;
-gap:8px;
+gap:6px;
 }
 
 .nav-right button{
 margin-left:0;
-width:110px;
-padding:6px 12px;
-font-size:14px;
+padding:5px 10px;
+font-size:12px;
+}
+
+/* logo small */
+.logo{
+font-size:1.3rem;
 }
 
 }
