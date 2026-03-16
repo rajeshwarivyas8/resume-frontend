@@ -717,3 +717,36 @@ width:200px;
 }
 
 }
+
+
+/* MOBILE NAVBAR FIX */
+@media (max-width:768px){
+
+.navbar{
+padding:15px 20px;
+}
+
+.logo{
+font-size:1.4rem;
+}
+
+/* Hide center menu on mobile */
+.nav-center{
+display:none;
+}
+
+/* Right buttons adjust */
+.nav-right{
+display:flex;
+flex-direction:column;
+gap:8px;
+}
+
+.nav-right button{
+margin-left:0;
+width:110px;
+padding:6px 12px;
+font-size:14px;
+}
+
+}
