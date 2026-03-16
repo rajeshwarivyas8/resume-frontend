@@ -684,3 +684,36 @@ body {
   background-color: #22c55e;
   color: white;
 }
+
+
+
+/* MOBILE FIX - DO NOT CHANGE DESKTOP DESIGN */
+@media (max-width:768px){
+
+.hero.container-full{
+width:100%;
+padding:60px 15px;
+}
+
+.hero h1{
+font-size:28px;
+line-height:1.3;
+}
+
+.hero p{
+font-size:15px;
+max-width:100%;
+padding:0 10px;
+}
+
+.hero-buttons{
+flex-direction:column;
+gap:12px;
+align-items:center;
+}
+
+.hero-btn{
+width:200px;
+}
+
+}
