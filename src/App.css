@@ -632,6 +632,54 @@ body {
   transition: 0.3s;
 }
 
+
+
+
+
+/* MOBILE RESPONSIVE FIX */
+@media (max-width: 768px) {
+
+  .builder-content{
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .resume-paper{
+    width: 100%;
+    transform: scale(0.65);
+  }
+
+  .auth-box{
+    width: 95%;
+    padding: 20px;
+  }
+
+  .auth-input{
+    width: 100%;
+  }
+
+  .auth-btn{
+    width: 100%;
+  }
+
+  .add-btn{
+    width: 100%;
+  }
+
+  .preview-content{
+    padding: 10px;
+  }
+
+  h1{
+    font-size: 24px;
+  }
+
+  p{
+    font-size: 14px;
+  }
+
+}
+
 .auth-btn:hover {
   background-color: #22c55e;
   color: white;
