@@ -738,7 +738,7 @@ padding-right:8px;
 display:flex;
 align-items:center;
 justify-content:space-between;
-gap:4px;
+gap:3px;
 }
 
 /* logo */
@@ -751,7 +751,7 @@ flex:0 0 auto;
 .nav-center{
 display:flex;
 justify-content:center;
-gap:5px;   /* reduced gap */
+gap:3px;   /* reduced gap */
 flex:1;
 }
 
