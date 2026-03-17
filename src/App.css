@@ -721,52 +721,60 @@ width:200px;
 
 @media (max-width:768px){
 
-.navbar{
-padding:8px 12px;
-}
-
 .nav-inner{
 display:flex;
-justify-content:space-between;
 align-items:center;
+justify-content:space-between;
+gap:5px;
 }
 
-/* center menu */
+/* logo takes fixed space */
+.logo{
+font-size:18px;
+flex:0 0 auto;
+}
+
+/* center takes remaining */
 .nav-center{
 display:flex;
-gap:8px;
-flex-wrap:nowrap;
+justify-content:center;
+gap:6px;
+flex:1;
 }
 
 .nav-center button{
+
 font-size:11px;
-padding:5px 8px;
+padding:5px 6px;
+border:none;
+background:none;
+cursor:pointer;
 white-space:nowrap;
+
 }
 
-/* right buttons */
+/* right buttons compact */
 .nav-right{
 display:flex;
-gap:6px;
+gap:5px;
+flex:0 0 auto;
 }
 
 .nav-right button{
 
-padding:5px 8px;
-font-size:11px;
+font-size:10px;
+padding:5px 7px;
 border-radius:15px;
 
 }
 
-/* logo */
-.logo{
-font-size:1.2rem;
-font-weight:600;
+/* make buttons smaller but readable */
+.btn-outline{
+padding:4px 8px;
 }
 
-/* optional */
-.nav-center button:hover{
-transform:scale(1.05);
+.btn-solid{
+padding:4px 8px;
 }
 
 }
