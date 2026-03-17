@@ -719,45 +719,54 @@ width:200px;
 }
 
 
-/* MOBILE NAVBAR FIX - KEEP HORIZONTAL */
 @media (max-width:768px){
 
 .navbar{
-padding:10px 10px;
+padding:8px 12px;
 }
 
 .nav-inner{
-flex-direction:row;
+display:flex;
 justify-content:space-between;
 align-items:center;
 }
 
-/* center menu horizontal hi rahe */
+/* center menu */
 .nav-center{
 display:flex;
-gap:10px;
+gap:8px;
+flex-wrap:nowrap;
 }
 
 .nav-center button{
-font-size:7px;
-padding:4px 6px;
+font-size:11px;
+padding:5px 8px;
+white-space:nowrap;
 }
 
-/* right buttons small */
+/* right buttons */
 .nav-right{
 display:flex;
 gap:6px;
 }
 
 .nav-right button{
-margin-left:0;
-padding:5px 10px;
-font-size:12px;
+
+padding:5px 8px;
+font-size:11px;
+border-radius:15px;
+
 }
 
-/* logo small */
+/* logo */
 .logo{
-font-size:1.3rem;
+font-size:1.2rem;
+font-weight:600;
+}
+
+/* optional */
+.nav-center button:hover{
+transform:scale(1.05);
 }
 
 }
