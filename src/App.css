@@ -721,31 +721,44 @@ width:200px;
 
 @media (max-width:768px){
 
+/* reduce outer space */
+.navbar{
+padding:8px 8px;
+}
+
+/* reduce container gap */
+.navbar .container{
+max-width:100%;
+padding-left:8px;
+padding-right:8px;
+}
+
+/* main flex */
 .nav-inner{
 display:flex;
 align-items:center;
 justify-content:space-between;
-gap:5px;
+gap:4px;
 }
 
-/* logo takes fixed space */
+/* logo */
 .logo{
-font-size:18px;
+font-size:17px;
 flex:0 0 auto;
 }
 
-/* center takes remaining */
+/* center menu */
 .nav-center{
 display:flex;
 justify-content:center;
-gap:6px;
+gap:5px;   /* reduced gap */
 flex:1;
 }
 
 .nav-center button{
 
 font-size:11px;
-padding:5px 6px;
+padding:4px 5px;   /* reduced padding */
 border:none;
 background:none;
 cursor:pointer;
@@ -753,28 +766,36 @@ white-space:nowrap;
 
 }
 
-/* right buttons compact */
+/* right buttons */
 .nav-right{
 display:flex;
-gap:5px;
+gap:4px;   /* reduced gap */
 flex:0 0 auto;
 }
 
 .nav-right button{
 
 font-size:10px;
-padding:5px 7px;
-border-radius:15px;
+padding:4px 7px;   /* reduced padding */
+border-radius:14px;
+margin-left:0;
 
 }
 
-/* make buttons smaller but readable */
+/* outline button */
 .btn-outline{
-padding:4px 8px;
+padding:4px 7px;
 }
 
+/* solid button */
 .btn-solid{
-padding:4px 8px;
+padding:4px 7px;
+}
+
+/* remove extra margins */
+.nav-center button,
+.nav-right button{
+margin:0;
 }
 
 }
