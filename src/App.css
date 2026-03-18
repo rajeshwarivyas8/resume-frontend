@@ -729,7 +729,7 @@ padding:8px 8px;
 /* reduce container gap */
 .navbar .container{
 max-width:100%;
-padding-left:8px;
+padding-left:7px;
 padding-right:8px;
 }
 
@@ -743,7 +743,7 @@ gap:3px;
 
 /* logo */
 .logo{
-font-size:17px;
+font-size:15px;
 flex:0 0 auto;
 }
 
